@@ -20,6 +20,7 @@
     cursor: pointer;
     &:hover{
         transform: scale(1.02);
+        filter: brightness(115%);
     }
     &:active{
         transform: scale(1);
@@ -34,7 +35,8 @@ html{
 
 body{
     @extend %full_altura_smp;
-    background-image: url(../img/login/fondo_01.svg);
+    background-color:$color_body;
+    //background-image: url(../img/login/fondo_01.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -46,13 +48,10 @@ body{
 
 
 .btn_login{
-    @extend %tipografia_login;
-    @extend %efecto_boton;
     background-color: $color_boton_login;
     color: $color_boton;
-    &:hover{
-        background-color: $color_boton_login_hover;
-    }
+    @extend %tipografia_login;
+    @extend %efecto_boton;   
 }
 
 .etiqueta{
@@ -63,14 +62,17 @@ body{
 
 .cuadro_login{
     border-style: solid;
-    border-color: $color_placeholder;
-    background-color: rgba(255, 255, 255, 0.397);
+    border-color: $borde_cuadro_login;
+    background-color:$color_cuadro_login;
     border-radius: 40px;
+    //el primer dato se refire a posicion de la sombra en x el segundo valor en y el tercer valor define el difuminado >=0
+    //el cuarto valor define el color.
+    box-shadow: 5px 5px 5px $color_sombra_login;
 }
 
 .tittulo_login{
     color:$color_titulo;
-    font-family:$tipografia_04_bold;
+    font-family:$tipografia_01;
     font-size: 2em;
 }
 

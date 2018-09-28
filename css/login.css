@@ -38,12 +38,13 @@ html, body, .ventana_registro_contenido {
 .btn_login, .etiqueta, .btn_save_registro, .btn_close_registro {
   cursor: pointer; }
   .btn_login:hover, .etiqueta:hover, .btn_save_registro:hover, .btn_close_registro:hover {
-    transform: scale(1.02); }
+    transform: scale(1.02);
+    filter: brightness(115%); }
   .btn_login:active, .etiqueta:active, .btn_save_registro:active, .btn_close_registro:active {
     transform: scale(1); }
 
 body {
-  background-image: url(../img/login/fondo_01.svg);
+  background-color: #5d84bf;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -51,24 +52,23 @@ body {
   padding-left: 2em; }
 
 .btn_login {
-  background-color: #2C8EA6;
+  background-color: #013777;
   color: white; }
-  .btn_login:hover {
-    background-color: #3ac7c0; }
 
 .etiqueta {
-  color: #9b9898;
+  color: #98564d;
   font-family: PekKomikSans; }
 
 .cuadro_login {
   border-style: solid;
-  border-color: #c6d5dc;
-  background-color: rgba(255, 255, 255, 0.397);
-  border-radius: 40px; }
+  border-color: #ffffff;
+  background-color: #f5f5f4a9;
+  border-radius: 40px;
+  box-shadow: 5px 5px 5px #252424; }
 
 .tittulo_login {
-  color: #585656;
-  font-family: CaviarDreams_Bold;
+  color: #4e1313;
+  font-family: PekKomikSans;
   font-size: 2em; }
 
 .ventana_registro {
@@ -80,7 +80,7 @@ body {
   background-size: cover; }
 
 .titulo_ventana_registro {
-  color: #9b9898;
+  color: #98564d;
   font-family: CasuaBold;
   font-size: 1.5em; }
 

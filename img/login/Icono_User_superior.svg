@@ -1,18 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"
-	 height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-<g id="Capa_2_1_">
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="50px"
+   height="50px"
+   viewBox="0 0 50 50"
+   enable-background="new 0 0 50 50"
+   xml:space="preserve"
+   id="svg12"
+   sodipodi:docname="Icono_User_superior.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata18"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs16"><marker
+   inkscape:stockid="Arrow1Lstart"
+   orient="auto"
+   refY="0.0"
+   refX="0.0"
+   id="Arrow1Lstart"
+   style="overflow:visible"
+   inkscape:isstock="true"><path
+     id="path4534"
+     d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+     style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#cad624;fill-opacity:1"
+     transform="scale(0.8) translate(12.5,0)" /></marker>
+	
+	
+</defs><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1366"
+   inkscape:window-height="714"
+   id="namedview14"
+   showgrid="false"
+   inkscape:zoom="4.72"
+   inkscape:cx="-11.864407"
+   inkscape:cy="25"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Capa_2" />
+<g
+   id="Capa_2_1_">
 </g>
-<g id="Capa_1">
-	<g id="Capa_2" opacity="0.7">
-		<circle fill="#3A8499" cx="25" cy="25" r="25"/>
+<g
+   style="opacity:0.7"
+   id="Capa_2">
+		<circle
+   style="fill:#245ad6;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:3, 1;stroke-dashoffset:0"
+   id="circle3"
+   r="25"
+   cy="25"
+   cx="25" />
+	</g><g
+   id="Capa_1_1_">
+		<path
+   style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+   inkscape:connector-curvature="0"
+   id="path6"
+   d="M 36.427,29.338 V 35.97 H 13.403 v -6.632 c 0,-2.443 5.151,-4.421 11.517,-4.421 6.356,10e-4 11.507,1.979 11.507,4.421 z"
+   stroke-miterlimit="10" />
+		<circle
+   style="fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:10"
+   id="circle8"
+   r="5.895"
+   cy="17.921"
+   cx="24.917"
+   stroke-miterlimit="10" />
 	</g>
-	<g id="Capa_1_1_">
-		<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-			M36.427,29.338v6.632H13.403v-6.632c0-2.443,5.151-4.421,11.517-4.421C31.276,24.918,36.427,26.896,36.427,29.338z"/>
-		<circle fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" cx="24.917" cy="17.921" r="5.895"/>
-	</g>
-</g>
 </svg>
