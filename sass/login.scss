@@ -35,8 +35,8 @@ html{
 
 body{
     @extend %full_altura_smp;
-    background-color:$color_body;
-    //background-image: url(../img/login/fondo_01.svg);
+    //background-color:$color_body;
+    background-image: url("../img/login/fondo_01.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -50,8 +50,9 @@ body{
 .btn_login{
     background-color: $color_boton_login;
     color: $color_boton;
-    @extend %tipografia_login;
-    @extend %efecto_boton;   
+    font-family:$tipografia_01;
+    @extend %efecto_boton;
+    font-size: 1.8em;   
 }
 
 .etiqueta{
@@ -61,8 +62,8 @@ body{
 }
 
 .cuadro_login{
-    border-style: solid;
-    border-color: $borde_cuadro_login;
+    //border-style: solid;
+    // border-color: $borde_cuadro_login;
     background-color:$color_cuadro_login;
     border-radius: 40px;
     //el primer dato se refire a posicion de la sombra en x el segundo valor en y el tercer valor define el difuminado >=0
