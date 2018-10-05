@@ -3,7 +3,8 @@
 
 <head>
     <title>Intercambios UNAH</title>
-    <?php include 'php_moldes_html/librerias_head.php'; ?>     
+    <?php include 'php_moldes_html/librerias_head.php'; ?>
+    <link rel="stylesheet" href="css/pagina_base.css">     
 </head>
 
 <body>
@@ -12,7 +13,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex">
             <a class="navbar-brand" href="">INTERCAMBIOS UNAH</a>            
             <!-- menu que se comprimira notar que el contenedor tiene el mismo id que el boton (togler) anterior -->
-            <div class="collapse navbar-collapse float-right" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Comprar Articulo<span class="sr-only">(current)</span></a>
@@ -36,6 +37,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </nav>
+    </div>
+
+    <div class="container cuerpo_pagina bg-light mt-3 border">
+
     </div>
 
     <?php include 'php_moldes_html/librerias_js.php'; ?>    

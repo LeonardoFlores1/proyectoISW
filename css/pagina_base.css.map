@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAc;EACV,YAAY,EAAE,UAAU;EACxB,MAAM,EAAE,KAAK",
+"sources": ["../sass/pagina_base.scss"],
+"names": [],
+"file": "pagina_base.css"
+}
