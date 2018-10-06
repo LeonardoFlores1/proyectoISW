@@ -10,10 +10,10 @@
 <body>
     <!-- Barra de navegacion -->
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="">INTERCAMBIOS UNAH</a>            
             <!-- menu que se comprimira notar que el contenedor tiene el mismo id que el boton (togler) anterior -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Comprar Articulo<span class="sr-only">(current)</span></a>
@@ -42,7 +42,7 @@
     <div class="container cuerpo_pagina bg-light mt-3 border">
 
     </div>
-
+    
     <?php include 'php_moldes_html/librerias_js.php'; ?>    
 </body>
 
