@@ -10,8 +10,14 @@
 <body>
     <!-- Barra de navegacion -->
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="">INTERCAMBIOS UNAH</a>            
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="">INTERCAMBIOS UNAH</a>
+
+            <!-- boton togler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                        
             <!-- menu que se comprimira notar que el contenedor tiene el mismo id que el boton (togler) anterior -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
@@ -31,11 +37,7 @@
                         <a class="nav-link" href="#">SALIR</a>
                     </li>
                 </ul>
-            </div>
-            <!-- boton togler -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            </div>            
         </nav>
     </div>
 
