@@ -1,0 +1,14 @@
+# ------------------------------------------------------------------------------------------
+#--Devuelve lista de usarios que concuerda con el nombre y pass enviados de parametro
+
+DELIMITER $$
+CREATE OR REPLACE PROCEDURE login(
+    nom VARCHAR(60),
+    pass VARCHAR(40)
+)
+BEGIN
+	SELECT U.id_usuario
+    FROM Usuario AS U 
+    WHERE U.nombre = nom AND U.pass= pass;
+END;
+$$
