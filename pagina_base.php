@@ -1,6 +1,6 @@
 <?php
     error_reporting(0);
-    include 'comprobador_usuario.php';	  
+    include 'comprobador_usuario.php';    
 ?>
 
 <!DOCTYPE html>
@@ -9,14 +9,18 @@
 <head>
     <title>Intercambios UNAH</title>
     <?php include 'php_moldes_html/librerias_head.php'; ?>
-    <link rel="stylesheet" href="css/pagina_base.css">     
+    <link rel="stylesheet" href="css/pagina_base.css">    
+    <link rel="icon" type="image/gif" href="img/IconosPagina_Base/Icono2.gif">
 </head>
 
 <body>
     <!-- Barra de navegacion -->
     <div class="container">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <a class="navbar-brand" href="">INTERCAMBIOS UNAH</a>
+            <a class="navbar-brand" href="">
+                <img src="img/IconosPagina_Base/Icono1.svg" alt="Logo" style="width:40px;">
+                INTERCAMBIOS UNAH
+            </a>
 
             <!-- boton togler -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
