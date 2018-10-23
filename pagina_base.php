@@ -10,7 +10,11 @@
     <title>Intercambios UNAH</title>
     <?php include 'php_moldes_html/librerias_head.php'; ?>
     <link rel="stylesheet" href="css/pagina_base.css">    
+<<<<<<< HEAD
     <link rel="icon" type="image/gif" href="img/IconosPagina_Base/Icono2.gif">
+=======
+    <link rel = "icon" type = "image/png" href = "img/IconosPagina_Base/Icono2.png">
+>>>>>>> b33e1cf0d03acff76cad807142eb2e169f6e612f
 </head>
 
 <body>

@@ -18,7 +18,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="librerias/bootstrap-4/css/bootstrap.min.css">  
+<<<<<<< HEAD
     <link rel="icon" type="image/gif" href="img/IconosPagina_Base/Icono2.gif">  
+=======
+    <link rel = "icon" type = "image/png" href = "img/IconosPagina_Base/Icono2.png">  
+>>>>>>> b33e1cf0d03acff76cad807142eb2e169f6e612f
 
     <!-- ***** Mis Estilos de login ***** -->
     <link rel="stylesheet" href="css/login.css">
