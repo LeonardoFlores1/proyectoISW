@@ -19,7 +19,11 @@
     <!-- Barra de navegacion -->
     <div class="container">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+
             <a class="navbar-brand" href="pagina_base.php">
+
+            <a class="navbar-brand" href="">
+
                 <img src="img/IconosPagina_Base/Icono1.svg" alt="Logo" style="width:40px;">
                 INTERCAMBIOS UNAH
             </a>
@@ -31,16 +35,27 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+
                         <a class="nav-link" href="compras.php" style="font-family: CaviarDreams;">Comprar Articulo<span class="sr-only">(current)</span></a>
+
+                        <a class="nav-link" href="#" style="font-family: CaviarDreams;">Comprar Articulo<span class="sr-only">(current)</span></a>
+
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Vender Articulo</a>
                     </li>
                     <li class="nav-item">
+
                         <a class="nav-link" href="intercambio.php">Cambiar Articulo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="perfil.php">Mi Perfil</a>
+
+                        <a class="nav-link" href="#">Cambiar Articulo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mi Perfil</a>
+
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="logout.php">SALIR</a>
