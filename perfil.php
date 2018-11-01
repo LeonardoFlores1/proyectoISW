@@ -1,6 +1,6 @@
 <?php
     error_reporting(0);
-    include 'comprobador_usuario.php';    
+    include 'BackEnd\comprobador_usuario.php';    
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -45,7 +45,7 @@
                         <a class="nav-link" href="perfil.php">Mi Perfil</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="logout.php">SALIR</a>
+                        <a class="nav-link" href="BackEnd\logout.php">SALIR</a>
                     </li>
                 </ul>
             </div>            
