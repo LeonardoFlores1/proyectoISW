@@ -18,7 +18,12 @@ $$
 #------Inserta un usuario
 
 DELIMITER $$
-CREATE DEFINER=`admin`@`localhost` PROCEDURE `insertar_usuario`(IN `nombre` VARCHAR(60), IN `apellido` VARCHAR(60), IN `contra` VARCHAR(60), IN `correo` VARCHAR(60), IN `telefono` INT(20))
+CREATE DEFINER=`admin`@`localhost` PROCEDURE `insertar_usuario`(
+					IN `nombre` VARCHAR(60),
+					IN `apellido` VARCHAR(60), 
+					IN `contra` VARCHAR(60), 
+					IN `correo` VARCHAR(60), 
+					IN `telefono` INT(20))
 BEGIN
 	INSERT INTO usuario(usuario.nombre,
                         usuario.apellido,
