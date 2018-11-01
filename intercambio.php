@@ -44,7 +44,7 @@
                         <a class="nav-link" href="perfil.php">Mi Perfil</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="logout.php">SALIR</a>
+                        <a class="nav-link" href="BackEnd\logout.php">SALIR</a>
                     </li>
                 </ul>
             </div>            
