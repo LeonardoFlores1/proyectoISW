@@ -1,6 +1,6 @@
 <?php
     error_reporting(0);
-    //include 'comprobador_usuario.php';    
+    include 'comprobador_usuario.php';    
 ?>
 
 <!DOCTYPE html>
