@@ -1,6 +1,6 @@
 <?php
     error_reporting(0);
-    include 'comprobador_usuario.php';    
+    include 'BackEnd\comprobador_usuario.php';    
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +13,12 @@
     <!-- Mis CSS -->
     <link rel="stylesheet" type="text/css" href="css/pagina_base.css">    
     <link rel="stylesheet" type="text/css" href="css/ventas.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src= 'BackEnd/obtenerLibros.js'>
+  </script>
 </head>
 
 <body>
@@ -37,9 +43,6 @@
                     <li class="nav-item">
 
                         <a class="nav-link" href="compras.php" style="font-family: CaviarDreams;">Comprar Articulo<span class="sr-only">(current)</span></a>
-
-                        <a class="nav-link" href="#" style="font-family: CaviarDreams;">Comprar Articulo<span class="sr-only">(current)</span></a>
-
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Vender Articulo</a>
@@ -49,16 +52,11 @@
                         <a class="nav-link" href="intercambio.php">Cambiar Articulo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="perfil.php">Mi Perfil</a>
-
-                        <a class="nav-link" href="#">Cambiar Articulo</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Mi Perfil</a>
 
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="logout.php">SALIR</a>
+                        <a class="nav-link" href="BackEnd\logout.php">SALIR</a>
                     </li>
                 </ul>
             </div>            
@@ -72,12 +70,7 @@
             <div class="col-lg-4 col-sm-12 border mx-auto cuadro_lista">
                 <h5 class="text-center mt-2">Mi lista de libros</h5>
                 <div class="form-group col-sm-12">
-                    <select multiple class="form-control" id="exampleSelect2" size="7">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <select multiple class="form-control" id="slcLibros" size="7">
                     </select>
                 </div>
                 <!--Botones agregar o quitar libros -->

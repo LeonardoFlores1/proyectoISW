@@ -17,7 +17,7 @@ include 'BackEnd\comprobador_usuario.php';
 <body>
     <!-- Barra de navegacion -->
     <div class="container">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <a class="navbar-brand" href="pagina_base.php">
                 <img src="img/IconosPagina_Base/Icono1.svg" alt="Logo" style="width:40px;">
                 INTERCAMBIOS UNAH
@@ -27,12 +27,12 @@ include 'BackEnd\comprobador_usuario.php';
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+                        
             <!-- menu que se comprimira notar que el contenedor tiene el mismo id que el boton (togler) anterior -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Comprar Articulo<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="compras.php">Comprar Articulo<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ventas.php">Vender Articulo</a>
@@ -40,7 +40,7 @@ include 'BackEnd\comprobador_usuario.php';
                     <li class="nav-item">
                         <a class="nav-link" href="intercambio.php">Cambiar Articulo</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link" href="perfil.php">Mi Perfil</a>
                     </li>
                     <li class="nav-item ">

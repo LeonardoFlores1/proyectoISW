@@ -1,19 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <title>login</title>
+
     <!-- LIBRERIAS -->
     <!-- etiquetas generadas por el editor -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="librerias/bootstrap-4/css/bootstrap.min.css">  
+
     <link rel = "icon" type = "image/png" href = "img/IconosPagina_Base/Icono2.png">  
+
+
     <link rel="icon" type="image/gif" href="img/IconosPagina_Base/Icono2.gif">  
+
     <link rel = "icon" type = "image/png" href = "img/IconosPagina_Base/Icono2.png">  
+
+
+
     <!-- ***** Mis Estilos de login ***** -->
     <link rel="stylesheet" href="css/login.css">
+
 </head>
+
 <body class="d-flex">    
     <div class="container align-self-center">
         <div class="row">            
@@ -31,10 +42,14 @@
                 <div class="row input-group mx-auto">                                        
                     <input class="col-11 form-control campo_texto mx-auto" type="text" placeholder="NOMBRE USUARIO" id="txt_user" name="txt_user" maxlength="40" minlength="6">                    
                 </div>
+
                 <!-- input de password -->
                 <div class="row input-group mx-auto mt-2">                   
                     <input class="col-11 form-control campo_texto mx-auto " type="password" placeholder="CONTRASEÑA" id="txt_pass" name="txt_pass" maxlength="25" minlength="5"> 
                 </div>
+                <!-- Codigo php para el login-->
+
+
                 <!-- Boton enviar -->
                 <div class="row form-group mx-auto mt-3">                    
                     <button name="btn_login" class="col-11 btn btn_login mx-auto">LOG IN</button>
@@ -60,6 +75,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>   
                 </div>
+                    
                 <!-- Contenedor de contenido (formularios y demas) -->
                 <form action="BackEnd\Registro.php"  id="BackEnd\Registro" name="BackEnd\Registro" method="POST" class="modal-body ventana_registro_contenido">
                      <!-- input de nombre y apellido -->
@@ -69,16 +85,21 @@
                     <div id="txt_apellido_registro" class="row input-group mx-auto mt-2">                        
                         <input class="col-10 form-control campo_texto mx-auto" type="text" placeholder="APELLIDO" id="txt_apellido_registro" name="txt_apellido_registro" maxlength="40" minlength="4">                    
                     </div>
+
                      <div id="txt_correo_registro" class="row input-group mx-auto mt-2">
                         <input class="col-10 form-control campo_texto mx-auto" type="text" placeholder="CORREO" id="txt_correo_registro" name = 'txt_correo_registro' maxlength="40" minlength="6">                    
                     </div>
+
                     <div id="txt_telefono_registro" class="row input-group mx-auto mt-2">                        
                         <input class="col-10 form-control campo_texto mx-auto" type="text" placeholder="NUMERO TELEFONICO" id="txt_telefono_registro" name="txt_telefono_registro" maxlength="40" minlength="6">                    
                     </div>
+
                     <!-- input de password -->
                     <div id="txt_pass_registro2" class="row input-group mx-auto mt-2">
                         <input class="col-10 form-control campo_texto mx-auto" type="password" placeholder="CONTRASEÑA" id="txt_pass_registro2" name="txt_pass_registro2" maxlength="25" minlength="5"> 
                     </div>
+
+
                     <div id="txt_pass_registro" class="row input-group mx-auto mt-2">
                         <input class="col-10 form-control campo_texto mx-auto" type="password" placeholder="CONFIRMAR CONTRASEÑA" id="txt_pass_registro" name="txt_pass_registro" maxlength="25" minlength="5"> 
                     </div>
@@ -86,8 +107,11 @@
                         <button type="button" class="btn btn_close_registro" data-dismiss="modal">CERRAR</button>
                         <input type="submit" name ="btn_registro" id="btn_registro" class="btn btn_registro ">GUARDAR DATOS</button>
                     </div>
+
                 </form>
+
             </div>
+                
         </div>
     </div>
     <!-- Librerias js -->
@@ -97,3 +121,7 @@
     <script src="librerias/bootstrap-4/js/bootstrap.min.js"></script>
 
 </html>
+
+
+
+
