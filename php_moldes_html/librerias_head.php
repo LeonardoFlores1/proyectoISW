@@ -11,3 +11,7 @@
 
 <!-- visualizador imagenes -->
 <link rel="stylesheet" type="text/css" href="librerias/slippry-1.4.0/dist/slippry.css">
+
+<!-- Alertify -->
+<link rel="stylesheet" type="text/css" href="librerias/alertify/css/alertify.css">
+<link rel="stylesheet" type="text/css" href="librerias/alertify/css/themes/bootstrap.css">

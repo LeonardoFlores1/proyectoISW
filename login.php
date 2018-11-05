@@ -13,16 +13,7 @@
     <title>login</title>
 
     <!-- LIBRERIAS -->
-    <!-- etiquetas generadas por el editor -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="librerias/bootstrap-4/css/bootstrap.min.css">  
-<<<<<<< HEAD
-    <link rel="icon" type="image/gif" href="img/IconosPagina_Base/Icono2.gif">  
-=======
-    <link rel = "icon" type = "image/png" href = "img/IconosPagina_Base/Icono2.png">  
->>>>>>> b33e1cf0d03acff76cad807142eb2e169f6e612f
+    <?php include 'php_moldes_html/librerias_head.php'; ?> 
 
     <!-- ***** Mis Estilos de login ***** -->
     <link rel="stylesheet" href="css/login.css">
@@ -42,21 +33,22 @@
                 <div class="row form-group mx-auto">
                     <h3 class="col-12 text-center tittulo_login">UNAH INTERCAMBIOS</h3>
                 </div>
-                <!-- input de email -->
+                <!-- input de nombre -->
                 <div class="row input-group mx-auto">                                        
-                    <input class="col-11 form-control campo_texto mx-auto" type="text" placeholder="NOMBRE USUARIO" id="txt_user" name="txt_user" maxlength="40" minlength="6">                    
+                    <input class="col-11 form-control campo_texto mx-auto icono_user" type="text" placeholder="NOMBRE USUARIO" id="txt_user" name="txt_user" maxlength="40" minlength="3">                    
                 </div>
 
                 <!-- input de password -->
                 <div class="row input-group mx-auto mt-2">                   
-                    <input class="col-11 form-control campo_texto mx-auto " type="password" placeholder="CONTRASEÑA" id="txt_pass" name="txt_pass" maxlength="25" minlength="5"> 
+                    <input class="col-11 form-control campo_texto mx-auto icono_pass" type="password" placeholder="CONTRASEÑA" id="txt_pass" name="txt_pass" maxlength="25" minlength="3"> 
                 </div>
                 <!-- Codigo php para el login-->
                 <?php
                     if (isset($_POST['btn_login'])) {   //comprobamos que se envieran datos con el formulario que contiene boton "btn_login"                    
                         if (isset($_POST['txt_user'])&&isset($_POST['txt_pass'])) {
                             if ($_POST['txt_user']!=''&& $_POST['txt_pass']!='') {
-                                $sql = 'CALL login("'.$_POST['txt_user'].'" , "'.$_POST['txt_pass'].'")'; //procedimiento almacenado
+                                //$sql = 'CALL login("'.$_POST['txt_user'].'" , "'.$_POST['txt_pass'].'")'; //procedimiento almacenado
+                                $sql='SELECT U.id_usuario FROM Usuario AS U WHERE U.nombre = "'.$_POST['txt_user'].'" AND U.pass= "'.$_POST['txt_pass'].'";';
                                 $consulta= mysqli_query($coneccion,$sql);
                                 $lineas=Array();
                                 $i=0;
@@ -76,7 +68,7 @@
                                 }
                                 mysqli_close($coneccion);
                                 if ($_SESSION['id_usuario'] != -1) {
-                                    header('location: pagina_base.php');
+                                    header('location: perfil.php');
                                 }else{
                                     echo '<div class="row col-11 alert alert-danger mt-1 mb-0 mx-auto" role="alert">
                                         <strong>Ojo!</strong> Usuario o Password incorrecto.
@@ -86,7 +78,7 @@
                         }
                         mysqli_close($coneccion);
                     }                            
-                 ?>
+                ?>
 
                 <!-- Boton enviar -->
                 <div class="row form-group mx-auto mt-3">                    
@@ -115,42 +107,44 @@
                     </button>
                 </div>
                 <!-- Contenedor de contenido (formularios y demas) -->
-                <div class="modal-body ventana_registro_contenido">
+                <form class="modal-body ventana_registro_contenido" enctype="multipart/form-data" id="formulario_registro" method="post">
                      <!-- input de nombre y apellido -->
                     <div class="row input-group mx-auto">                        
-                        <input class="col-10 form-control campo_texto mx-auto" type="text" placeholder="NOMBRE" id="txt_nombre_registro" maxlength="40" minlength="6">                    
+                        <input class="col-10 form-control campo_texto mx-auto icono_user" type="text" placeholder="NOMBRE" id="txt_nombre_registro" name="txt_nombre_registro" maxlength="40" minlength="3" required>                    
                     </div>
-
+                    <!-- Contraseña -->
                     <div class="row input-group mx-auto mt-2">                        
-                        <input class="col-10 form-control campo_texto mx-auto" type="text" placeholder="APELLIDO" id="txt_apellido_registro" maxlength="40" minlength="6">                    
+                        <input class="col-10 form-control campo_texto mx-auto icono_pass" type="password" placeholder="CONTRASEÑA" id="txt_pass_registro" name="txt_pass_registro" maxlength="40" minlength="3" required>                    
+                    </div>
+                    <!-- Confirmacion Contraseña -->
+                    <div class="row input-group mx-auto mt-2">
+                        <input class="col-10 form-control campo_texto mx-auto icono_pass" type="password" placeholder="REPITA SU CONTRASEÑA" id="txt_pass_registro_2" name="txt_pass_registro_2" maxlength="25" minlength="3" required> 
                     </div>
 
                      <div class="row input-group mx-auto mt-2">                        
-                        <input class="col-10 form-control campo_texto mx-auto" type="text" placeholder="CORREO" id="txt_correo_registro" maxlength="40" minlength="6">                    
+                        <input class="col-10 form-control campo_texto mx-auto icono_correo" type="email" placeholder="CORREO" id="txt_correo_registro" name="txt_correo_registro" maxlength="40" minlength="6" required>                    
                     </div>
 
                     <div class="row input-group mx-auto mt-2">                        
-                        <input class="col-10 form-control campo_texto mx-auto" type="text" placeholder="NUMERO TELEFONICO" id="txt_telefono_registro" maxlength="40" minlength="6">                    
+                        <input class="col-10 form-control campo_texto mx-auto icono_telefono" type="tel" placeholder="TELEFONO" id="txt_telefono_registro" name="txt_telefono_registro" maxlength="40" minlength="6">                   
                     </div>
 
-                    <!-- input de password -->
-                    <div class="row input-group mx-auto mt-2">
-                        <input class="col-10 form-control campo_texto mx-auto" type="password" placeholder="CONTRASEÑA" id="txt_pass_registro" maxlength="25" minlength="5"> 
-                    </div>
-                </div>
+                    <div class="row input-group mx-auto mt-2" id="alerta_registro">
+                        
+                    </div>                    
+                </form>
                 <!-- Botones de guradado y cierre -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn_close_registro" data-dismiss="modal">CERRAR</button>
-                    <button type="button" class="btn btn_save_registro ">GUARDAR DATOS</button>
+                    <button type="button" class="btn btn_save_registro" id="btn_guardar">GUARDAR DATOS</button>
                 </div>
             </div>
         </div>
     </div>
     
     <!-- Librerias js -->
-    <script src="librerias/jquery-3.3.1.min.js" ></script>
-    <script src="librerias/popper.js-1.12.5/dist/umd/popper.min.js"></script>
-    <script src="librerias/tether-1.3.3/dist/js/tether.min.js"></script>    
-    <script src="librerias/bootstrap-4/js/bootstrap.min.js"></script>
+    <?php include 'php_moldes_html/librerias_js.php'; ?>  
+    <!-- Mis js -->
+    <script src="js/login.js" type="text/javascript"></script>
 
 </html>

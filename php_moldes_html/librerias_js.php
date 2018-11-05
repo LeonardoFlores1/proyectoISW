@@ -8,3 +8,6 @@
 
 <!-- visualizador imagenes -->
 <script src="librerias/slippry-1.4.0/dist/slippry.min.js" type="text/javascript"></script>
+
+<!-- Alertify -->
+<script src="librerias/alertify/alertify.js"></script>

@@ -27,7 +27,6 @@
     }
 }
 
-
 //ESTILOS DE ELEMENTOS
 html{
     @extend %full_altura_smp;
@@ -42,7 +41,9 @@ body{
 }
 
 .campo_texto{    
-    @extend %tipografia_login;
+    //@extend %tipografia_login;
+    //font-family: CaviarDreams_Bold;
+    font-size: 1.4em;
     padding-left: 2em;    
 }
 
@@ -111,21 +112,33 @@ body{
     font-size: 1em;
 }
 
-#txt_user{
+.icono_user{
     background-image: url(../img/login/Icono_User_01_negro_relleno.svg);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: 1% 50%;
 }
 
-#txt_pass{
+.icono_pass{
     background-image: url(../img/login/Icono_Candado_03_negro_relleno.svg);
     background-repeat: no-repeat;
     background-size: 30px 30px;  
     background-position: 1% 50%;
 }
 
+.icono_correo{
+    background-image: url(../img/login/Icono_mail.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;  
+    background-position: 1% 50%;
+}
 
+.icono_telefono{
+    background-image: url(../img/login/Icono_telefono.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;  
+    background-position: 1% 50%;
+}
 .icono_superior{
     position: relative;
     margin-top: -65px;

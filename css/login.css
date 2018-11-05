@@ -31,10 +31,6 @@ html, body, .ventana_registro_contenido {
   margin: none;
   padding: none; }
 
-.campo_texto {
-  font-family: PekKomikSans;
-  font-size: 1.4em; }
-
 .btn_login, .etiqueta, .btn_save_registro, .btn_close_registro {
   cursor: pointer; }
   .btn_login:hover, .etiqueta:hover, .btn_save_registro:hover, .btn_close_registro:hover {
@@ -49,6 +45,7 @@ body {
   background-size: cover; }
 
 .campo_texto {
+  font-size: 1.4em;
   padding-left: 2em; }
 
 .btn_login {
@@ -96,14 +93,26 @@ body {
   font-family: PekKomikSans;
   font-size: 1em; }
 
-#txt_user {
+.icono_user {
   background-image: url(../img/login/Icono_User_01_negro_relleno.svg);
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: 1% 50%; }
 
-#txt_pass {
+.icono_pass {
   background-image: url(../img/login/Icono_Candado_03_negro_relleno.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 1% 50%; }
+
+.icono_correo {
+  background-image: url(../img/login/Icono_mail.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 1% 50%; }
+
+.icono_telefono {
+  background-image: url(../img/login/Icono_telefono.svg);
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: 1% 50%; }

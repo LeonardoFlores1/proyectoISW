@@ -1,8 +1,0 @@
-CREATE TABLE Usuario(id_usuario INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-                     nombre VARCHAR(60) NOT NULL UNIQUE,
-                     apellido VARCHAR(60),
-                     pass VARCHAR(60) NOT NULL,
-                     correo VARCHAR(60) NOT NULL,
-                     telefono VARCHAR(60))CHARSET=utf8 COLLATE utf8_spanish_ci;
-
-
