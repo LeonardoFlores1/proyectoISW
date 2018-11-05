@@ -1,6 +1,11 @@
 <?php
+<<<<<<< HEAD
     error_reporting(0);
     include 'BackEnd\comprobador_usuario.php';	  
+=======
+error_reporting(0);
+include 'BackEnd\comprobador_usuario.php';	  
+>>>>>>> 946e774736882d9ca0a8629952950d653d0e631c
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +37,11 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
+<<<<<<< HEAD
                         <a class="nav-link" href="compras.php">Comprar Articulo</a>
+=======
+                        <a class="nav-link" href="compras.php">Comprar Articulo<span class="sr-only">(current)</span></a>
+>>>>>>> 946e774736882d9ca0a8629952950d653d0e631c
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ventas.php">Vender Articulo</a>

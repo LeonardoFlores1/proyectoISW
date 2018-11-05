@@ -1,6 +1,10 @@
 <?php
     error_reporting(0);
+<<<<<<< HEAD
     include 'BackEnd/comprobador_usuario.php';    
+=======
+    include 'BackEnd\comprobador_usuario.php';    
+>>>>>>> 946e774736882d9ca0a8629952950d653d0e631c
 ?>
 
 <!DOCTYPE html>
@@ -11,12 +15,22 @@
     <!-- Mis CSS -->
     <link rel="stylesheet" type="text/css" href="css/pagina_base.css">    
     <link rel="stylesheet" type="text/css" href="css/ventas.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src= 'BackEnd/obtenerLibros.js'>
+  </script>
 </head>
 <body>
     <!-- Barra de navegacion -->
     <div class="container">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+
+            <a class="navbar-brand" href="pagina_base.php">
+
             <a class="navbar-brand" href="">
+
                 <img src="img/IconosPagina_Base/Icono1.svg" alt="Logo" style="width:40px;">
                 INTERCAMBIOS UNAH
             </a>
@@ -28,12 +42,18 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+<<<<<<< HEAD
                         <a class="nav-link" href="compras.php">Comprar Articulo</a>
+=======
+
+                        <a class="nav-link" href="compras.php" style="font-family: CaviarDreams;">Comprar Articulo<span class="sr-only">(current)</span></a>
+>>>>>>> 946e774736882d9ca0a8629952950d653d0e631c
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Vender Articulo</a>
                     </li>
                     <li class="nav-item">
+<<<<<<< HEAD
                         <a class="nav-link" href="intercambio.php">Cambiar Articulo</a>
                     </li>
                     <li class="nav-item">
@@ -41,6 +61,17 @@
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="BackEnd/logout.php">SALIR</a>
+=======
+
+                        <a class="nav-link" href="intercambio.php">Cambiar Articulo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mi Perfil</a>
+
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="BackEnd\logout.php">SALIR</a>
+>>>>>>> 946e774736882d9ca0a8629952950d653d0e631c
                     </li>
                 </ul>
             </div>            
@@ -54,7 +85,11 @@
             <div class="col-lg-4 col-sm-12 border mx-auto cuadro_lista">
                 <h5 class="text-center mt-2">Mi lista de libros</h5>
                 <div class="form-group col-sm-12">
+<<<<<<< HEAD
                     <select multiple class="form-control" id="Lista_libros" size="7" onchange="mostrar_libro()">
+=======
+                    <select multiple class="form-control" id="slcLibros" size="7">
+>>>>>>> 946e774736882d9ca0a8629952950d653d0e631c
                     </select>
                 </div>
                 <!--Botones agregar o quitar libros -->

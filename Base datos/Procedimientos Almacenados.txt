@@ -1,0 +1,36 @@
+# ------------------------------------------------------------------------------------------
+#--Devuelve lista de usarios que concuerda con el nombre y pass enviados de parametro
+
+DELIMITER $$
+CREATE OR REPLACE PROCEDURE login(
+    nom VARCHAR(60),
+    pass VARCHAR(40)
+)
+BEGIN
+	SELECT U.id_usuario
+    FROM Usuario AS U 
+    WHERE U.nombre = nom AND U.pass= pass;
+END;
+$$
+
+
+#-------------------------------------------------------------------------------------------
+#------Inserta un usuario
+
+DELIMITER $$
+CREATE DEFINER=`admin`@`localhost` PROCEDURE `insertar_usuario`(
+					IN `nombre` VARCHAR(60),
+					IN `apellido` VARCHAR(60), 
+					IN `contra` VARCHAR(60), 
+					IN `correo` VARCHAR(60), 
+					IN `telefono` INT(20))
+BEGIN
+	INSERT INTO usuario(usuario.nombre,
+                        usuario.apellido,
+                        usuario.pass,
+                        usuario.correo,
+                        usuario.telefono
+                        )
+    VALUES (nombre,apellido,contra,correo,telefono);
+END$$
+DELIMITER ;

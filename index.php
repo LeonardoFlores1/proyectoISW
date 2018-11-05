@@ -74,7 +74,12 @@
 			</footer>
 		</div>
 	</div>
+<<<<<<< HEAD
 	<script type="text/javascript" src='librerias/bootstrap-4/js/bootstrap.min.js'></script>
+=======
+	<script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
+	<script type="text/javascript" src='js/bootstrap.js'></script>
+>>>>>>> 946e774736882d9ca0a8629952950d653d0e631c
 <div class="clearfix"></div>
 </body>
 </html>
